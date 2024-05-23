@@ -9,7 +9,7 @@
 
 ## Задание №1. Реализация произведения 
 
-Декартово произведение объектов $A \times B$ оснащается стрелками-проекциями $\pi_1:A \times B \longrightarrow A$ и $\pi_2:A \times B \longrightarrow B$. Для каждого объекта $X$ и пары совместимых $f:X\longrightarrow A$ и $g:X\longrightarrow B$ определена стрелка спаривания $<f,g>$.
+Декартово произведение объектов $A \times B$ оснащается стрелками-проекциями $\pi_1:A \times B \longrightarrow A$ и $\pi_2:A \times B \longrightarrow B$. Для каждого объекта $X$ и пары совместимых $f:X\longrightarrow A$ и $g:X\longrightarrow B$ определена стрелка спаривания ${f,g}$.
 
 Таким образом, выполняются следующие спецификации: 
 
@@ -41,7 +41,7 @@ func Second[A, B any](p Pair[A, B]) B {
 }
 ```
 
-Общая функция ($<f,g>$) будет выглядеть следующим образом:
+Общая функция (${f,g}$) будет выглядеть следующим образом:
 
 ```go
 func BuildPair[SrcT, A, B any](
