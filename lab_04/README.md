@@ -14,7 +14,7 @@
 
 $Id$ - идентичный функтор ($Id(A) = A, Id(f) = f$)
 
-Монада - $<F, \eta, \mu>$, где $F$ - функтор, $\eta= Id\longrightarrow F$, $\mu = F^2 \longrightarrow F$
+Монада - $\{F, \eta, \mu\}$, где $F$ - функтор, $\eta= Id\longrightarrow F$, $\mu = F^2 \longrightarrow F$
 
 $$muComp⟨F⟩(A : Set) := \mu_F(A) \circ F(\mu_F(A)) = \mu_F(A) \circ \mu_F(F(A))$$
 
